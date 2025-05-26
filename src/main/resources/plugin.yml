@@ -1,0 +1,15 @@
+name: CommandComparator
+version: '${version}'
+main: com.github.jensco.cc.CommandComparator
+api-version: '1.21'
+softdepend: [floodgate, Geyser-Spigot]
+
+commands:
+  cc:
+    description: Preform a java or bedrock command
+    usage: /cc <javacommand> || <bedrockcommand>
+    permission: commandcomparator.use
+permissions:
+  commandcomparator.use:
+    description: Permission to use /cc command
+    default: op
