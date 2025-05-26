@@ -8,6 +8,9 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,13 +27,6 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew clean build
-
-      - name: Upload build artifact (non-tag)
-        if: github.ref_type != 'tag'
-        uses: actions/upload-artifact@v4
-        with:
-          name: CommandComparator-jar
-          path: build/libs/CommandComparator.jar
 
       - name: Create GitHub Release (on tag)
         if: github.ref_type == 'tag'
