@@ -21,7 +21,7 @@ Example usage:
 
 ## 🚀 Installation
 
-1. Download the latest plugin JAR from the [Releases](https://github.com/Jens-Co/CommandComparator/releases) tab (or build it yourself).
+1. Download the latest plugin JAR from the [Modrinth](https://modrinth.com/plugin/commandcomperator) tab (or build it yourself).
 2. Place `CommandComparator.jar` in your server's `plugins/` directory.
 3. Restart your server.
 4. Done! The plugin will auto-detect Geyser or Floodgate.
